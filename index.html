@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel=stylesheet href=css/style.min.css>
+    <title>ОЛИМП</title>
+</head>
+<body class="page-body">
+    <header class="header">
+        <div class="container header__elements-wrapper">
+            <div class="header__menu">
+                <div class="header__menu-toggle header__menu-toggle--closed"></div>
+                <span class="header__menu-title">Меню</span>
+            </div>
+            <div>
+                <img class="header__logo" src="img/logo-white.svg" alt="logo"/>
+            </div>
+            <div class="header__desktop-menu">
+                <ul class="header__desktop-menu-list">
+                    <li data-modal="promos" class="header__desktop-menu-item">Акции</li>
+                    <li data-modal="addresses" class="header__desktop-menu-item">Филиалы</li>
+                    <li data-modal="about-club" class="header__desktop-menu-item">О клубе</li>
+                </ul>
+            </div>
+            <button data-modal-open class="header__button header__button-mobile button">Абонемент</button>
+            <button data-modal-open class="header__button header__button-other-views button">Заказать абонемент</button>
+        </div>
+    </header>
+
+    <div class="header__menu-mobile-modal header__menu-mobile-modal--hide">
+        <ul class="header__menu-mobile-modal-list">
+            <li data-modal="promos" class="header__menu-mobile-modal-item">
+                Акции
+            </li>
+            <li data-modal="addresses" class="header__menu-mobile-modal-item">
+                Филиалы
+            </li>
+            <li data-modal="about-club" class="header__menu-mobile-modal-item">
+                О клубе
+            </li>
+            
+            <li class="header__menu-mobile-modal-item-empty"></li>
+        </ul>
+    </div>
+
+    <main class="container">
+
+        <h1 class="visually-hidden">Спорт-клуб "Олимп"</h1>
+
+        <section class="intro">
+            <h2 class="visually-hidden">Годовой абонемент</h2>
+            <div class="swiper intro-swiper">
+                <ul class="swiper-wrapper intro__slides-list">
+                    <li class="swiper-slide intro__slide-item">
+                        <img class="intro__slide-img" src="img/intro-1.jpg" alt="" width="320">
+                    </li>
+                    <li class="swiper-slide intro__slide">
+                        <img class="intro__slide-img" src="img/intro-2.jpg" alt="" width="320">
+                    </li>
+                </ul>
+                <div class="intro__text">
+                    <p class="intro__text-title"><span>Спорт-клуб<br></span> в Перми</p>
+                    <p class="intro__text-price">годовой абонемент<br><span>от 2990 ₽</span></p>
+                </div>
+            </div>
+        </section>
+
+        <section class="advantages">
+            <h2 class="visually-hidden">Что мы можем вам предоставить:</h2>
+            <ul class="advantages__list">
+                <li class="advantages__item">
+                    <img src="img/trainer-ico.svg" alt="">
+                    <p class="advantages__item-text">
+                        Тренажеры на все<br>
+                        группы мышц
+                    </p>
+                </li>
+                <li class="advantages__item advantages__item-separate">
+                    <div class="advantages__separate-line-items"></div>
+                </li>
+                <li class="advantages__item">
+                    <img src="img/sauna-ico.svg" alt="">
+                    <p class="advantages__item-text">
+                        Душ и сауна<br>
+                        в каждом зале
+                    </p>
+                </li>
+                <li class="advantages__item">
+                    <img src="img/group-ico.svg" alt="">
+                    <p class="advantages__item-text">
+                        Более 20<br>
+                        групповых тренировок
+                    </p>
+                </li>
+                <li class="advantages__item advantages__item-separate">
+                    <div class="advantages__separate-line-items"></div>
+                </li>
+                <li class="advantages__item">
+                    <img src="img/professional-ico.svg" alt="">
+                    <p class="advantages__item-text">
+                        Профессиональные<br>
+                        персональные тренеры
+                    </p>
+                </li>
+            </ul>
+            <hr class="advantages__separate-line-bottom">
+        </section>
+
+        <section class="promos">
+            <h2 class="promos__title" id="promos">Акции</h2>
+            <div class="promos__timer-wrapper">
+                <div class="promos__timer">
+                    <p class="promos__timer-title">До конца акций осталось:</p>
+                    <ul class="promos__time-items-list">
+                        <li class="promos__time-item">
+                            <div class="promos__time-number">
+                                <span id="days" class="promos__time-number-cell">00</span>
+                                <div class="promos__time-number-bg promos__time-number-1"></div>
+                                <div class="promos__time-number-bg promos__time-number-2"></div>
+                            </div>
+                            <p class="promos__time-text">
+                                дней
+                            </p>
+                        </li>
+                        <li class="promos__time-separator">
+                            .
+                        </li>
+                        <li class="promos__time-item">
+                            <div class="promos__time-number">
+                                <span id="hours" class="promos__time-number-cell">00</span>
+                                <div class="promos__time-number-bg promos__time-number-1"></div>
+                                <div class="promos__time-number-bg promos__time-number-2"></div>
+                            </div>
+                            <p class="promos__time-text">
+                                часов
+                            </p>
+                        </li>
+                        <li class="promos__time-separator">
+                            .
+                        </li>
+                        <li class="promos__time-item">
+                            <div class="promos__time-number">
+                                <span id="minutes" class="promos__time-number-cell">00</span>
+                                <div class="promos__time-number-bg promos__time-number-1"></div>
+                                <div class="promos__time-number-bg promos__time-number-2"></div>
+                            </div>
+                            <p class="promos__time-text">
+                                минут
+                            </p>
+                        </li>
+                        <li class="promos__time-separator">
+                            .
+                        </li>
+                        <li class="promos__time-item">
+                            <div class="promos__time-number">
+                                <span id="seconds" class="promos__time-number-cell">00</span>
+                                <div class="promos__time-number-bg promos__time-number-1"></div>
+                                <div class="promos__time-number-bg promos__time-number-2"></div>
+                            </div>
+                            <p class="promos__time-text">
+                                секунд
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <ul class="promos__list">
+                <li class="promos__item">
+                    <div class="promos__item-inner-border">
+                        <div class="promos__item-content">
+                            <p class="promos__item-content-title">12 месяцев <br> безлимит студент</p>
+                            <p class="promos__item-content-price">3299 ₽</p>
+                            <button data-modal-open="1" class="promos__item-content-button button">Очень хочу !!!</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="promos__item">
+                    <div class="promos__item-inner-border">
+                        <div class="promos__item-content">
+                            <p class="promos__item-content-title">6 месяцев безлимит <br>+3 персональные тренировки</p>
+                            <p class="promos__item-content-price">2499 ₽</p>
+                            <button data-modal-open="2" class="promos__item-content-button button">Очень хочу !!!</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="promos__item">
+                    <div class="promos__item-inner-border">
+                        <div class="promos__item-content">
+                            <p class="promos__item-content-title">6 персональных <br> тренировок </p>
+                            <p class="promos__item-content-price">2999 ₽</p>
+                            <button data-modal-open="3" class="promos__item-content-button button">Очень хочу !!!</button>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+        <section class="description">
+            <h2 class="visually-hidden">О клубе</h2>
+            <div id="about-club" class="swiper description-swiper description__slider">
+                <ul class="swiper-wrapper description__slides-list">
+                    <li class="swiper-slide description__slide">
+                        <img src="img/slide-1.jpg" alt="slide-1" width="144" height="262">
+                    </li>
+                    <li class="swiper-slide description__slide">
+                        <img src="img/slide-2.png" alt="slide-2" width="144" height="262">
+                    </li>
+                    <li class="swiper-slide description__slide">
+                        <img src="img/slide-3.jpg" alt="slide-3" width="144" height="262">
+                    </li>
+                    <li class="swiper-slide description__slide">
+                        <img src="img/slide-4.jpg" alt="slide-4" width="144" height="262">
+                    </li>
+                    <li class="swiper-slide description__slide">
+                        <img src="img/slide-5.jpg" alt="slide-5" width="144" height="262">
+                    </li>
+                    <li class="swiper-slide description__slide">
+                        <img src="img/slide-6.jpg" alt="slide-5" width="144" height="262">
+                    </li>
+                    <li class="swiper-slide description__slide">
+                        <img src="img/slide-7.png" alt="slide-5" width="144" height="262">
+                    </li>
+                    <li class="swiper-slide description__slide">
+                        <img src="img/slide-8.jpg" alt="slide-5" width="144" height="262">
+                    </li>
+                    <li class="swiper-slide description__slide">
+                        <img src="img/slide-9.jpg" alt="slide-5" width="144" height="262">
+                    </li>
+                </ul>
+                <div class="description__slide-next swiper-button-next">
+                    <img src="img/description-slider-arrow.svg" alt="arrow">
+                </div>
+                <div class="description__slide-prev swiper-button-prev">
+                    <img src="img/description-slider-arrow.svg" alt="arrow">
+                </div>
+            </div>
+            <h3 class="description__text description__text-title">Олимп</h3>
+            <p class="description__text description__text-subtitle"><span>Премиум</span> Спорт-клуб в Перми</p>
+            <p class="description__text-body">
+                Премиум сеть спортивных клубов в Перми.
+                Новое и современное оборудование.
+                В каждом зале есть сауна и душ.
+                Филиалы по всему городу.
+                Годовой абонемент от<br><span>2 990 руб.</span>
+            </p>
+            <div class="description__features">
+                <h4 class="visually-hidden">Наши преимущества</h4>
+                <ul class="description__features-list">
+                    <li class="description__feature-item">
+                        <img src="img/feature-bullet.svg" alt="">
+                        <p class="description__feature-item-text">Тренажеры на все группы мышц</p>
+                    </li>
+                    <li class="description__feature-item">
+                        <img src="img/feature-bullet.svg" alt="">
+                        <p class="description__feature-item-text">Более 20 направлений групповых занятий</p>
+                    </li>
+                    <li class="description__feature-item">
+                        <img src="img/feature-bullet.svg" alt="">
+                        <p class="description__feature-item-text">Душ и сауна в каждом клубе</p>
+                    </li>
+                    <li class="description__feature-item">
+                        <img src="img/feature-bullet.svg" alt="">
+                        <p class="description__feature-item-text">Персональные тренировки</p>
+                    </li>
+                    <li class="description__feature-item">
+                        <img src="img/feature-bullet.svg" alt="">
+                        <p class="description__feature-item-text">Фитнес в каждом клубе</p>
+                    </li>
+                    <li class="description__feature-item">
+                        <img src="img/feature-bullet.svg" alt="">
+                        <p class="description__feature-item-text">Дружный тренерский состав</p>
+                    </li>
+                </ul>
+            </div>
+            <button data-modal-open="trial" class="description__button button">
+                Записаться на пробное занятие
+            </button>
+        </section>
+
+        <section class="addresses">
+            <h2 class="addresses__title" id="addresses">Адреса клубов</h2>
+            <ul class="addresses__list">
+                <li class="addresses__item">
+                    <div class="addresses__item-text-wrapper">
+                        <p class="addresses__item-address">Пермь, ул.Баумана, 12</p>
+                        <a href="tel:+73420000001" class="addresses__item-phone">+7(342)000 00 01</a>
+                        <p class="addresses__item-work-time">
+                            <span>
+                                ежедневно<br class="addresses__item-work-time-linebreak"> с 08:00 до 00:00
+                            </span>
+                        </p>
+                    </div>
+                    <iframe class="addresses__item-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2115.065879435902!2d56.192917915931126!3d57.986718181209355!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x43e8c753b149b7cf%3A0xcac52210c0e43729!2z0YPQuy4g0JHQsNGD0LzQsNC90LAsIDEyLCDQn9C10YDQvNGMLCDQn9C10YDQvNGB0LrQuNC5INC60YDQsNC5LCA2MTQwNjY!5e0!3m2!1sru!2sru!4v1630491503958!5m2!1sru!2sru" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </li>
+                <li class="addresses__separate-line"></li>
+                <li class="addresses__item">
+                    <div class="addresses__item-text-wrapper">
+                        <p class="addresses__item-address">Пермь, ул.Ленина, 64</p>
+                        <a href="tel:+73420000002" class="addresses__item-phone">+7(342)000 00 02</a>
+                        <p class="addresses__item-work-time">
+                            <span>
+                                ежедневно<br class="addresses__item-work-time-linebreak"> с 08:00 до 00:00
+                            </span>
+                        </p>
+                    </div>
+                    <iframe class="addresses__item-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2113.7362793085595!2d56.22830991593204!3d58.00923358121654!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x43e8c724349268a9%3A0x9078b7640436f5ac!2z0YPQuy4g0JvQtdC90LjQvdCwLCA2NCwg0J_QtdGA0LzRjCwg0J_QtdGA0LzRgdC60LjQuSDQutGA0LDQuSwgNjE0MDQ1!5e0!3m2!1sru!2sru!4v1630681910186!5m2!1sru!2sru" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </li>
+                <li class="addresses__separate-line"></li>
+                <li class="addresses__item">
+                    <div class="addresses__item-text-wrapper">
+                        <p class="addresses__item-address">Пермь, ул.КИМ, 61</p>
+                        <a href="tel:+73420000003" class="addresses__item-phone">+7(342)000 00 03</a>
+                        <p class="addresses__item-work-time">
+                            <span>
+                                ежедневно<br class="addresses__item-work-time-linebreak"> с 08:00 до 00:00
+                            </span>
+                        </p>
+                    </div>
+                    <iframe class="addresses__item-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2112.9145010295156!2d56.29440761593259!3d58.02314678122102!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x43e8c6b0506d23fb%3A0xc6c38484a4024fdf!2z0YPQuy4g0JrQmNCcLCA2MSwg0J_QtdGA0LzRjCwg0J_QtdGA0LzRgdC60LjQuSDQutGA0LDQuSwgNjE0MTA3!5e0!3m2!1sru!2sru!4v1630491883715!5m2!1sru!2sru" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="contaiter">
+            <h2 class="visually-hidden">Подвал сайта</h2>
+                <div class="footer__logo-social-wrapper">
+                    <div class="footer__logo footer__logo--other-views">
+                        <img src="img/logo-white.svg" alt="logo"/>
+                    </div>
+                    <div class="footer__social">
+                        <div class="footer__logo footer__logo--tablet ">
+                            <img src="img/logo-white.svg" alt="logo"/>
+                        </div>
+                        <h3 class="footer__social-title">Мы в социальных сетях</h3>
+                        <ul class="footer__social-list">
+                            <li class="footer__social-item">
+                                <a href="https://www.twitter.com">
+                                    <img src="img/twitter.svg" alt="">
+                                </a>
+                                <p class="visually-hidden">Твиттер</p>
+                            </li>
+                            <li class="footer__social-item">
+                                <a href="https://www.instagram.com">
+                                    <img src="img/instagram.svg" alt="">
+                                </a>
+                                <p class="visually-hidden">Инстаграм</p>
+                            </li>
+                            <li class="footer__social-item">
+                                <a href="https://www.vk.com">
+                                    <img src="img/vk.svg" alt="">
+                                </a>
+                                <p class="visually-hidden">Вконтакте</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <a href="about-site.html" class="footer__about-web-site footer__about-web-site--desktop">
+                        О сайте
+                    </a>
+                </div>
+            <a href="about-site.html" class="footer__about-web-site footer__about-web-site--other-views">
+                О сайте
+            </a>
+        </div>
+        <p class="footer__copyright">Copyright 2021 ©</p>
+    </footer>
+
+    <div class="popup popup--hide">
+        <div class="popup__dialog">
+            <div class="popup__content">
+                <button type="button" class="popup__close"><strong>&times;</strong></button>
+                <div class="popup__form">
+                    <form class="form" action="#">
+                        <h2 class="form__title">Заказ абонемента</h2>
+                        <input class="form__input" name="user_name" required type="text" placeholder="Введите ваше имя">
+                        <input class="form__input" name="user_phone" required type="text" placeholder="Введите телефон">
+                        <select id="abonement-select" class="form__input form__select" name="abonement-type">
+                            <option selected hidden value="0">Выберите абонемент</option>
+                            <option value="1">12 месяцев безлимит студент 3299 ₽</option>
+                            <option value="2">6 месяцев безлимит +3 персональные тренировки 2499 ₽</option>
+                            <option value="3">6 персональных тренировок 2999 ₽</option>
+                            <option value="4">12 месяцев безлимит 4499 ₽</option>
+                            <option value="5">4 месяца безлимит 2099 ₽</option>
+                            <option value="6">Пробное занятие</option>
+                            <option value="7">Другое</option>
+                        </select>
+                        <select id="addresses-select" class="form__input form__select" name="addresses">
+                            <option selected hidden value="0">Выберите филиал</option>
+                            <option value="1">Пермь, ул.Баумана, 12</option>
+                            <option value="2">Пермь, ул.Ленина, 64</option>
+                            <option value="3">Пермь, ул.КИМ, 61</option>
+                        </select>
+                        <button class="form__button button" name="submit" type="submit">Отправить заявку</button>
+                        <p class="form__notice">Нажимая "Отправить заявку", я даю согласие на обработку персональных данных</p>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-status popup--hide">
+            <div class="form-status__loading form-status__item popup--hide">
+                <img src="img/loading.gif" alt="">
+                <p>Отправка на сервер...</p>
+            </div>
+            <div class="form-status__success form-status__item popup--hide">
+                <img src="img/success.svg" alt="">
+                <p>Спасибо! Мы с вами скоро свяжемся.</p>
+            </div>
+            <div class="form-status__failure form-status__item popup--hide">
+                <img src="img/failure.svg" alt="">
+                <p>Что-то пошло не так...</p>
+                <p>
+                    Проверьте ваш интеренет<br/>
+                    и попробуйте снова!
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
